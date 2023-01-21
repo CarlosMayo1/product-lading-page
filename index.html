@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>Product Landing Page</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-container container">
+        <img
+          id="header-img"
+          src="https://1000marcas.net/wp-content/uploads/2021/05/Carters-Logo.png"
+        />
+        <nav id="nav-bar">
+          <a href="#baby-section" class="nav-link">
+            <i class="fas fa-baby"></i>
+            <span>Baby</span>
+          </a>
+          <a href="#girl-section" class="nav-link">
+            <i class="fas fa-female"></i>
+            <span>Girl</span>
+          </a>
+          <a href="#boy-section" class="nav-link">
+            <i class="fas fa-child"></i>
+            <span>Boy</span>
+          </a>
+          <a href="#new-collection-section" class="nav-link puzzle">
+            <i class="fas fa-puzzle-piece"></i>
+            <span>New collection</span>
+          </a>
+          <a href="#offer-section" class="nav-link offer">
+            <i class="fas fa-money-bill-alt"></i>
+            <span>Offer</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <div class="img-banner"></div>
+      <h2 class="company-name">Baby Owl Peru</h2>
+      <h1 class="title">Main products</h1>
+      <div class="main-products container">
+        <div class="card">
+          <img
+            src="https://www.carters.com/dw/image/v2/AAMK_PRD/on/demandware.static/-/Sites-carters_master_catalog/default/dwc60b6951/productimages/1I732110.jpg?sw=800&sh=1000&sfrm=jpg"
+          />
+          <div class="information">
+            <div class="size-container">
+              <h2>18m</h2>
+            </div>
+            <h3>Body suit pack - 7 units</h3>
+            <p>Carter's</p>
+            <span>$10</span>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="data:image/jpeg;base64,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"
+          />
+          <div class="information">
+            <div class="size-container">
+              <h2>6m</h2>
+              <h2>12m</h2>
+              <h2>18m</h2>
+            </div>
+            <h3>Body suit pack - 4 units</h3>
+            <p>Carter's</p>
+            <span>$10</span>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://www.carters.com/dw/image/v2/AAMK_PRD/on/demandware.static/-/Sites-carters_master_catalog/default/dw7996ad75/productimages/1I720610.jpg?sw=800&sh=1000&sfrm=jpg"
+          />
+          <div class="information">
+            <div class="size-container">
+              <h2>12m</h2>
+            </div>
+            <h3>Body suit pack - 4 units</h3>
+            <p>Carter's</p>
+            <span>$10</span>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://i.linio.com/p/9d65987ae2f455a93bfcb563fd23405b-product.jpg"
+          />
+          <div class="information">
+            <div class="size-container">
+              <h2>12m</h2>
+            </div>
+            <h3>Body suit pack - 4 units</h3>
+            <p>Carter's</p>
+            <span>$10</span>
+          </div>
+        </div>
+      </div>
+      <div class="baby-products">
+        <h1 id="baby-section" class="title">For babies</h1>
+        <div class="baby-products-content container">
+          <div class="card">
+            <img
+              src="https://www.carters.com/dw/image/v2/AAMK_PRD/on/demandware.static/-/Sites-carters_master_catalog/default/dw2c9572e7/productimages/1K445410.jpg?sw=800&sh=1000&sfrm=jpg"
+            />
+            <div class="information">
+              <div class="size-container">
+                <h2>3m</h2>
+              </div>
+              <h3>Body suit pack - 5 units</h3>
+              <p>Carter's</p>
+              <span>$10</span>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://i.linio.com/p/e4a05368bdb3ce01a8af299346c72d3a-product.jpg"
+            />
+            <div class="information">
+              <div class="size-container">
+                <h2>3m</h2>
+              </div>
+              <h3>A beautiful romper for baby boy</h3>
+              <p>Carter's</p>
+              <span>$10</span>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://i5.walmartimages.com/asr/a95599dd-a47d-47c6-b30e-2faf248722c0_1.693b2486a8bf8fc62a1d0725e76ae553.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
+            />
+            <div class="information">
+              <div class="size-container">
+                <h2>3m</h2>
+              </div>
+              <h3>A beautiful romper for baby boy</h3>
+              <p>Carter's</p>
+              <span>$7</span>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9c8fIuNWa6QhhRCPwccIZl7h2ZopGxvrzhA&usqp=CAU"
+            />
+            <div class="information">
+              <div class="size-container">
+                <h2>3m</h2>
+              </div>
+              <h3>A beautiful romper for baby girl</h3>
+              <p>Carter's</p>
+              <span>$8</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="girl-products">
+        <h1 id="girl-section" class="title">For baby girls</h1>
+        <div class="girl-products-content container">
+          <div class="card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0793/8475/products/126H440.jpg?v=1529492175"
+            />
+            <div class="information">
+              <div class="size-container">
+                <h2>6m</h2>
+              </div>
+              <h3>Body suit pack - 5 units</h3>
+              <p>Carter's</p>
+              <span>$12</span>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://i.linio.com/p/4005fbc1add226c6b340abb2f7985a2f-product.jpg"
+            />
+            <div class="information">
+              <div class="size-container">
+                <h2>6m</h2>
+                <h2>12m</h2>
+              </div>
+              <h3>Body suit pack - 5 units</h3>
+              <p>Carter's</p>
+              <span>$15</span>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://i.linio.com/p/78e495ef60bbf0f15de9d37a50d4c852-product.jpg"
+            />
+            <div class="information">
+              <div class="size-container">
+                <h2>3m</h2>
+                <h2>6m</h2>
+              </div>
+              <h3>Body suit pack - 5 units</h3>
+              <p>Carter's</p>
+              <span>$10</span>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://bambinoapparel.ph/wp-content/uploads/2020/05/17641210.jpg"
+            />
+            <div class="information">
+              <div class="size-container">
+                <h2>3m</h2>
+                <h2>6m</h2>
+                <h2>12m</h2>
+              </div>
+              <h3>Body suit pack - 7 units</h3>
+              <p>Carter's</p>
+              <span>$15</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="boy-products">
+        <h1 id="boy-section" class="title">For baby boys</h1>
+        <div class="boy-products-content container">
+          <div class="card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT72CIV_6ZP61bsgG2bLbk5vRPX_Y2LCBM4A3GbKcArBUPGnxTUDPzQ6iMuhMN1kzy3Vcc&usqp=CAU"
+            />
+            <div class="information">
+              <div class="size-container">
+                <h2>6m</h2>
+              </div>
+              <h3>A beautiful set for your little boy - 2 units</h3>
+              <p>Carter's</p>
+              <span>$13</span>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://m.media-amazon.com/images/I/912GQnc2zxL._AC_UL1500_.jpg"
+            />
+            <div class="information">
+              <div class="size-container">
+                <h2>3m</h2>
+                <h2>6m</h2>
+                <h2>12m</h2>
+              </div>
+              <h3>A beautiful casual set for yout little boy - 2 units</h3>
+              <p>Carter's</p>
+              <span>$12</span>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://products.blains.com/600/129/1298525.jpg" />
+            <div class="information">
+              <div class="size-container">
+                <h2>3m</h2>
+                <h2>9m</h2>
+              </div>
+              <h3>A beautiful casual set for yout little boy - 2 units</h3>
+              <p>Carter's</p>
+              <span>$14</span>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="data:image/jpeg;base64,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"
+            />
+            <div class="information">
+              <div class="size-container">
+                <h2>3m</h2>
+                <h2>6m</h2>
+              </div>
+              <h3>A suit set for yout little boy - 3 units</h3>
+              <p>Carter's</p>
+              <span>$14</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="new-colletion-products">
+        <h1 id="new-collection-section" class="title">New collection</h1>
+        <div class="new-collection-content container">
+          <div class="card">
+            <img
+              src="https://m.media-amazon.com/images/I/91HO0pti6RL._AC_UL1500_.jpg"
+            />
+            <div class="information">
+              <div class="size-container">
+                <h2>12m</h2>
+              </div>
+              <h3>New pack of body suit for your baby - 5 units</h3>
+              <p>Carter's</p>
+              <span>$15</span>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://www.carters.com/dw/image/v2/AAMK_PRD/on/demandware.static/-/Sites-carters_master_catalog/default/dw216cb476/productimages/1L811410.jpg?sw=800&sh=1000&sfrm=jpg"
+            />
+            <div class="information">
+              <div class="size-container">
+                <h2>6m</h2>
+              </div>
+              <h3>New pack of body suit for your baby - 6 units</h3>
+              <p>Carter's</p>
+              <span>$17</span>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://www.carters.com/dw/image/v2/AAMK_PRD/on/demandware.static/-/Sites-carters_master_catalog/default/dw4d2b17bd/productimages/1K043710.jpg?sw=800&sh=1000&sfrm=jpg"
+            />
+            <div class="information">
+              <div class="size-container">
+                <h2>3m</h2>
+              </div>
+              <h3>New pack of body suit for your baby - 4 units</h3>
+              <p>Carter's</p>
+              <span>$15</span>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://bambinoapparel.ph/wp-content/uploads/2020/05/17636010.jpg"
+            />
+            <div class="information">
+              <div class="size-container">
+                <h2>12m</h2>
+              </div>
+              <h3>New pack of body suit for your baby - 5 units</h3>
+              <p>Carter's</p>
+              <span>$12</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offer-products">
+        <h1 id="offer-section" class="title">Special offer</h1>
+        <div class="offer-products-content container">
+          <div class="card">
+            <img
+              src="https://i.linio.com/p/fb0c601843baa5d88bfe6ce31a04de42-product.jpg"
+            />
+            <div class="information">
+              <div class="size-container">
+                <h2>12m</h2>
+              </div>
+              <h3>A new special offer - 4 units</h3>
+              <p>Carter's</p>
+              <span>$9</span>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIcZmBP7bqwc4tknZwqthXiZ5LC4ON8fHPJg&usqp=CAU"
+            />
+            <div class="information">
+              <div class="size-container">
+                <h2>3m</h2>
+              </div>
+              <h3>A new special offer - 5 units</h3>
+              <p>Carter's</p>
+              <span>$5</span>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://i5.walmartimages.com/asr/eec407ff-dd27-4181-82b3-8907faf2d003.41ad939c2a99283ef38272a0b145f4ec.jpeg"
+            />
+            <div class="information">
+              <div class="size-container">
+                <h2>6m</h2>
+              </div>
+              <h3>A new special offer - 4 units</h3>
+              <p>Carter's</p>
+              <span>$8</span>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJNX7aWlMLb-W2drcT4IF26M8xs4I5dmtKpg&usqp=CAU"
+            />
+            <div class="information">
+              <div class="size-container">
+                <h2>9m</h2>
+              </div>
+              <h3>A new special offer - 5 units</h3>
+              <p>Carter's</p>
+              <span>$7</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <h1 class="title">Wanna be in contact?</h1>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input
+        id="email"
+        type="email"
+        name="email"
+        placeholder="Enter your email address"
+        required
+      />
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+    <h1 class="title">Carter's video</h1>
+    <section id="video-section">
+      <iframe
+        id="video"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/liuiD7540Lo"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </section>
+    <footer id="footer">
+      <div class="footer-container container">
+        <div>Made with <i class="fas fa-coffee"></i> by Carlos Mayo 2021</div>
+        <div class="copyright">
+          <i class="far fa-copyright"></i> 2021 - This is a FCC project
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
